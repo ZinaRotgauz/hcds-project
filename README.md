@@ -1,3 +1,23 @@
+# Dataset documentation
+
+- The dataset was uploaded by Kaggle user fedesoriano. It's a confidential source, available for educational or research purposes, provided that an acknowledgment is given to the original author
+- No additional info about how the data was collected, funding or sponsorship for the dataset’s creation.
+- The dataset was uploaded to Kaggle approximately four years ago.
+
+# Attribute description
+
+- id: unique identifier for each patient
+- gender: gender of the patient, "Male", "Female" or "Other"
+- age: age of the patient 
+- hypertension: 0 if no hypertension, 1 if the patient has hypertension
+- heart_disease: 0 if no heart disease, 1 if the patient has heart disease
+- ever_married: "Yes" or "No" 
+- work_type: type of occupation, "children", "Govt_jov", "Never_worked", "Private" or "Self-employed"
+- Residence_type: "Urban" or "Rural"
+- avg_glucose_level: average glucose level in blood
+- bmi: Body Mass Index
+- smoking_status: "formerly smoked", "never smoked", "smokes" or "Unknown" (if the information is unavailable for one patient)
+- stroke: 0 if no stroke, 1 if the patient had a stroke. Target variable
 
 # Stroke prediction:
 Stroke is considered one of the most popular reasons of human death, responsible for approximately 11% of total deaths. 
