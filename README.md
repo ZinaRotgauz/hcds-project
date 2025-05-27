@@ -19,7 +19,10 @@
 - smoking_status: "formerly smoked", "never smoked", "smokes" or "Unknown" (if the information is unavailable for one patient)
 - stroke: 0 if no stroke, 1 if the patient had a stroke. Target variable
 
-# Stroke prediction:
+# Decision scenario
+
+## Real-world application
+
 Stroke is considered one of the most popular reasons of human death, responsible for approximately 11% of total deaths. 
 This dataset is used to predict whether a patient is likely to get stroke based on the input parameters like gender, age, various diseases, and smoking status. Each row in the data provides relavant information about the patient.
 
@@ -49,6 +52,13 @@ Are people in private-sector jobs at greater risk than government or children?
 How does stroke risk vary across glucose level or smoking status categories?
 
 What interventions (e.g., glucose monitoring, smoking cessation) might reduce stroke incidence most effectively?
+
+## Constraints and Requirements
+
+- Ethical: cannot discriminate on the basis of gender, age or place of residence.
+- Medical: the model must be interpretable for physicians.
+- Technical: high accuracy requirements (especially recall - to avoid missing stroke cases).
+- Legal: protection of personal medical data (GDPR, HIPAA).
 
 # Techncal details
 For our research we are going to consider, **RandomForest, LogicalRegression** and ... models and evaluate their accuracy for answering our research questions. Later on you will see the attribute comparison of their abilities. 
