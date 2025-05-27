@@ -60,5 +60,10 @@ What interventions (e.g., glucose monitoring, smoking cessation) might reduce st
 - Technical: high accuracy requirements (especially recall - to avoid missing stroke cases).
 - Legal: protection of personal medical data (GDPR, HIPAA).
 
+## Stakes
+
+- Financial: if strokes are not prevented early, high medical costs would incur for hospitals and insurance providers
+- 
+
 # Techncal details
-For our research we are going to consider, **RandomForest, LogicalRegression** and ... models and evaluate their accuracy for answering our research questions. Later on you will see the attribute comparison of their abilities. 
+For our research we are going to consider Logical Regression and Random Forest models and evaluate their accuracy for answering our research questions. This is because Logical Regression is highly interpretable and works well with binary targets, and it also explains which features contributes most to stroke risks. Random Forest also has high interpretability. It handles missing values well and ranks feature importance.
