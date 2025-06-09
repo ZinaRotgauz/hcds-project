@@ -1,6 +1,6 @@
 # Dataset documentation
 
-**Dataset Name**: Stroke Prediction  
+**Dataset Name**: Stroke Prediction
 **Source / Link**:[Kaggle - Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data)
 **Domain / Context**: Public health and preventive medicine — cerebrovascular event risk assessment
 **Number of Instances**:  5,110
