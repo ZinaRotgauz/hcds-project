@@ -1,8 +1,18 @@
 # Dataset documentation
 
+**Dataset Name**: Stroke Prediction  
+**Source / Link**:[Kaggle - Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data)
+**Domain / Context**: Public health and preventive medicine — cerebrovascular event risk assessment
+**Number of Instances**:  5,110
+**Number of Features**:  11 features + 1 target
+**Possible Target Variable(s)**:  stroke (0 = No, 1 = Yes)
+**Data Access & License**:  Publicly available for research and educational purposes via Kaggle
+
+The dataset provides demographic, lifestyle, and medical information for individuals with the goal of predicting whether a person is likely to suffer a stroke. It includes features such as age, gender, hypertension, heart disease, average glucose level, BMI, work type, and smoking status. The dataset is imbalanced, with only about 5% of the entries indicating a stroke event.
+
 - The dataset was uploaded by Kaggle user fedesoriano. It's a confidential source, available for educational or research purposes, provided that an acknowledgment is given to the original author
 - No additional info about how the data was collected, funding or sponsorship for the dataset’s creation.
-- The dataset was uploaded to Kaggle approximately four years ago.
+- was uploaded to Kaggle approximately four years ago.
 
 # Attribute description
 
@@ -21,6 +31,7 @@
 
 # Decision scenario
 
+
 ## Real-world application
 
 Stroke is considered one of the most popular reasons of human death, responsible for approximately 11% of total deaths. 
@@ -28,7 +39,36 @@ This dataset is used to predict whether a patient is likely to get stroke based 
 
 Our idea is to explore and analyze the data and get the key insights that will help to form important policies and educational models to prevent the spreading of the disease.
 
-That is why we consider several direction for our research:
+
+**A hospital implements a decision-support system aimed at preventive health profiling to help general practitioners segment patients into stroke risk groups during routine checkups. Rather than offering a binary risk outcome, the ML model assigns patients to different risk clusters based on features such as age, BMI, glucose level, smoking status, and medical history.**
+
+The model supports physicians by offering an interpretable profile of a patient's risk group and suggesting personalized preventive interventions such as lifestyle changes, diagnostic referrals, or follow-up schedules. This clustering approach helps doctors proactively manage high-risk individuals before stroke symptoms occur.
+
+* **Use Case:** A general practitioner uses the system during preventive checkups to categorize patients into risk profiles and offer targeted health guidance.
+
+* **Type of ML Task:** Unsupervised clustering with follow-up profiling (and optional classification for stroke occurrence prediction)
+
+**Constraints & Requirements:**
+
+* Interpretability: Physicians must be able to understand and explain risk group assignments.
+
+* Actionability: Each risk profile must correspond to meaningful and distinct health advice.
+
+* Data Imbalance: Few stroke cases limit traditional classification reliability.
+
+* Clinical Validity: Risk clusters must align with medically known stroke risk factors.
+
+* Privacy: All patient data must remain confidential under applicable health data protection laws (e.g., GDPR).
+
+What’s at Stake: 
+ * Missed opportunities for early intervention, or overburdening low-risk individuals with unnecessary procedures. The goal is to allocate preventive resources effectively and ethically.
+
+
+
+
+
+
+
 
 ## Health Profiling
 ### Segment the population into health risk groups to support personalized intervention strategies.
