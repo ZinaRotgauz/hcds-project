@@ -1,11 +1,17 @@
 # Dataset documentation
 
 **Dataset Name**: Stroke Prediction
+
 **Source / Link**:[Kaggle - Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data)
+
 **Domain / Context**: Public health and preventive medicine — cerebrovascular event risk assessment
+
 **Number of Instances**:  5,110
+
 **Number of Features**:  11 features + 1 target
+
 **Possible Target Variable(s)**:  stroke (0 = No, 1 = Yes)
+
 **Data Access & License**:  Publicly available for research and educational purposes via Kaggle
 
 The dataset provides demographic, lifestyle, and medical information for individuals with the goal of predicting whether a person is likely to suffer a stroke. It includes features such as age, gender, hypertension, heart disease, average glucose level, BMI, work type, and smoking status. The dataset is imbalanced, with only about 5% of the entries indicating a stroke event.
