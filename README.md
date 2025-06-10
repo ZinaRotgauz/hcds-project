@@ -128,13 +128,13 @@ What interventions (e.g., glucose monitoring, smoking cessation) might reduce st
 
 # Prototyping
 ## Defining Target Audience
-Primary Stakeholder: Doctor
-In our project, the primary stakeholder is doctor, who use the application during routine health checkups to identify patients at elevated risk of stroke. This decision-support system segments patients into risk profiles based on their demographic and health data, aiding doctors in tailoring preventive care.
-- What prior knowledge to the stakeholders need to use your application?
+Primary Stakeholder: Doctor<br>
+Doctos use the application during routine health checkups to identify patients at elevated risk of stroke. This decision-support system segments patients into risk profiles based on their demographic and health data, aiding doctors in tailoring preventive care.
+- What prior knowledge to the stakeholders need to use your application?<br>
   Doctors need to understand general health risk factors (age, hypertension, glucose, BMI, etc.). No specific ML knowledge is needed, but a basic understanding of how features contribute to clustering or classification helps.
-- What explanations might the stakeholder need?
+- What explanations might the stakeholder need?<br>
   Doctors must be able to explain why a patient is classified into a particular risk group. They need visual and textual explanations of key contributing features (e.g., "High glucose and smoking history place this patient in a high-risk cluster").
-- What prior knowledge in Data Science is needed to understand the decision?
+- What prior knowledge in Data Science is needed to understand the decision?<br>
   Minimal. Explanations should avoid technical jargon and focus on feature importance, trend patterns, and medically relevant insights. Model outputs must be interpretable, perhaps supported by SHAP values or decision trees, with emphasis on medically validated factors.
 ## Individual Paper Prototypes
 ## Group Paper Prototypes
