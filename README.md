@@ -70,16 +70,7 @@ What’s at Stake:
  * Missed opportunities for early intervention, or overburdening low-risk individuals with unnecessary procedures. The goal is to allocate preventive resources effectively and ethically.
 
 
-# Stakeholder Analysis
-## Public Health Policy Makers
-### Goals: 
-Improve population health, reduce incidence of strokes through effective early interventions. Optimize resource allocation, save time and money for the public health system
-### Objectives: 
-Understand how to incorporate model’s output into downstream actions: How should public health programs or resource allocations change based on the model’s risk predictions?
-Ensure compliance with standards or regulations – non-discrimination standards / Medical data privacy laws
-### Tasks:
-Understand influence of different factors: Which factors are most influential? How do they interact?
-Understand model strengths and limitations: Where is the model reliable? Where is it weak? Helps avoid misuse of the model.
+
 
 
 
@@ -128,6 +119,15 @@ What interventions (e.g., glucose monitoring, smoking cessation) might reduce st
 | **Objectives** | - Debug or improve the model<br>- Ensure compliance with standards or regulations | - Justify or explain actions influenced by the model’s output<br>- Understand how one’s data is being used |
 | **Tasks**      | - Assess reliability of predictions<br>- Understand the extent of the information the model is using | - Understand the influence of different factors on the model’s output<br>- Understand model strengths and limitations |
 
+## Public Health Policy Makers
+### Goals: 
+Improve population health, reduce incidence of strokes through effective early interventions. Optimize resource allocation, save time and money for the public health system
+### Objectives: 
+Understand how to incorporate model’s output into downstream actions: How should public health programs or resource allocations change based on the model’s risk predictions?
+Ensure compliance with standards or regulations – non-discrimination standards / Medical data privacy laws
+### Tasks:
+Understand influence of different factors: Which factors are most influential? How do they interact?
+Understand model strengths and limitations: Where is the model reliable? Where is it weak? Helps avoid misuse of the model.
 
 
 # Techncal details
