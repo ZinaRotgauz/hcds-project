@@ -1,4 +1,4 @@
-# Dataset documentation
+![image](https://github.com/user-attachments/assets/b7dc6025-95e9-4731-ad26-ba49f395ead2)# Dataset documentation
 
 **Dataset Name**: Stroke Prediction
 
@@ -121,6 +121,14 @@ What interventions (e.g., glucose monitoring, smoking cessation) might reduce st
 
 - Financial: if strokes are not prevented early, high medical costs would incur for hospitals and insurance providers
 - 
+
+## Stakeholder Analysis - ML expert (us) 
+| **Goal**      | Understand how the model works | Build trust in the model |
+|--------------|-------------------------------|---------------------------|
+| **Objectives** | - Debug or improve the model<br>- Ensure compliance with standards or regulations | - Justify or explain actions influenced by the model’s output<br>- Understand how one’s data is being used |
+| **Tasks**      | - Assess reliability of predictions<br>- Understand the extent of the information the model is using | - Understand the influence of different factors on the model’s output<br>- Understand model strengths and limitations |
+
+
 
 # Techncal details
 For our research we are going to consider Logical Regression and Random Forest models and evaluate their accuracy for answering our research questions. This is because Logical Regression is highly interpretable and works well with binary targets, and it also explains which features contributes most to stroke risks. Random Forest also has high interpretability. It handles missing values well and ranks feature importance.
