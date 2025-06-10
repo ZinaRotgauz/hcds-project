@@ -119,7 +119,12 @@ What interventions (e.g., glucose monitoring, smoking cessation) might reduce st
 | **Objectives** | - Debug or improve the model<br>- Ensure compliance with standards or regulations | - Justify or explain actions influenced by the model’s output<br>- Understand how one’s data is being used |
 | **Tasks**      | - Assess reliability of predictions<br>- Understand the extent of the information the model is using | - Understand the influence of different factors on the model’s output<br>- Understand model strengths and limitations |
 
-## Public Health Policy Makers
+## Stakeholder Analysis - Public Health Policy Makers
+| **Goal**      | Improve population health | Optimize resource allocation |
+|--------------|-------------------------------|---------------------------|
+| **Objectives** | - Understand how to incorporate model’s output into downstream actions<br>- How should public health programs or resource allocations change based on the model’s risk predictions | - Ensure compliance with standards or regulations<br>- Understand how one’s data is being used |
+| **Tasks**      | - Understand influence of different factors<br>- Which factors are most influential? How do they interact? | - Understand model strengths and limitations<br>- Where is the model reliable? Where is it weak? |
+
 ### Goals: 
 Improve population health, reduce incidence of strokes through effective early interventions. Optimize resource allocation, save time and money for the public health system
 ### Objectives: 
