@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b7dc6025-95e9-4731-ad26-ba49f395ead2)# Dataset documentation
+# Dataset documentation
 
 **Dataset Name**: Stroke Prediction
 
