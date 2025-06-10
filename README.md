@@ -113,17 +113,23 @@ What interventions (e.g., glucose monitoring, smoking cessation) might reduce st
 - Financial: if strokes are not prevented early, high medical costs would incur for hospitals and insurance providers
 - 
 
-## Stakeholder Analysis - ML expert (us) 
+# Stakeholder Analysis
+## ML expert (us) 
 | **Goal**      | Understand how the model works | Build trust in the model |
 |--------------|-------------------------------|---------------------------|
 | **Objectives** | - Debug or improve the model<br>- Ensure compliance with standards or regulations | - Justify or explain actions influenced by the model’s output<br>- Understand how one’s data is being used |
 | **Tasks**      | - Assess reliability of predictions<br>- Understand the extent of the information the model is using | - Understand the influence of different factors on the model’s output<br>- Understand model strengths and limitations |
 
-## Stakeholder Analysis - Public Health Policy Makers
+## Public Health Policy Makers
 | **Goal**      | Improve population health | Optimize resource allocation |
 |--------------|-------------------------------|---------------------------|
 | **Objectives** | - Understand how to incorporate model’s output into downstream actions<br>- How should public health programs or resource allocations change based on the model’s risk predictions | - Ensure compliance with standards or regulations<br>- non-discrimination standards / Medical data privacy laws |
 | **Tasks**      | - Understand influence of different factors<br>- Which factors are most influential? How do they interact? | - Understand model strengths and limitations<br>- Where is the model reliable? Where is it weak? |
+
+# Prototyping
+## Defining Target Audience
+## Individual Paper Prototypes
+## Group Paper Prototypes
 
 
 # Techncal details
