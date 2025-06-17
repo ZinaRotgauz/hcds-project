@@ -137,7 +137,9 @@ Doctos use the application during routine health checkups to identify patients a
 - What prior knowledge in Data Science is needed to understand the decision?<br>
   Minimal. Explanations should avoid technical jargon and focus on feature importance, trend patterns, and medically relevant insights. Model outputs must be interpretable, perhaps supported by SHAP values or decision trees, with emphasis on medically validated factors.
 ## Individual Paper Prototypes
+
 ## Group Paper Prototypes
+![photo_2025-06-17_13-58-30](https://github.com/user-attachments/assets/572a4cc5-9b0a-4122-be14-dc9513a9be38)
 
 
 # Techncal details
