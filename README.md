@@ -144,5 +144,5 @@ Doctos use the application during routine health checkups to identify patients a
 ![photo_2025-06-17_13-58-30](https://github.com/user-attachments/assets/572a4cc5-9b0a-4122-be14-dc9513a9be38)
 
 
-# Techncal details
+# Technical details
 For our research we are going to consider Logical Regression and Random Forest models and evaluate their accuracy for answering our research questions. This is because Logical Regression is highly interpretable and works well with binary targets, and it also explains which features contributes most to stroke risks. Random Forest also has high interpretability. It handles missing values well and ranks feature importance.
