@@ -150,7 +150,32 @@ Doctos use the application during routine health checkups to identify patients a
 ![WechatIMG467](https://github.com/user-attachments/assets/d274cefc-1018-4950-86e5-420883e73942)
 ![WechatIMG468](https://github.com/user-attachments/assets/f8c07985-0f24-4e24-b8ab-aa2941a1b548)
 
+## EDA & main insights
 
+Dataset has 5110 rows.
+There are missing values in bmi column.
+There is 2 more numeric Column than text columns.
+Due to the imbalance in the dataset, with only 249 individuals having had a stroke, we will apply over-sampling (SMOTE) to increase the number of stroke cases and balance the dataset.
+![image](https://github.com/user-attachments/assets/b05b0a16-862b-4db6-a749-fae32b1570d4)
+
+As we can see the stroke cases are pretty imbalanced, although the gender groups are represented equally.
+But let's see the representation of other features:
+![image](https://github.com/user-attachments/assets/eccc0dbe-ca16-45e2-b951-aa0a69be0512)
+
+
+We have a good age distribution. I think we have disparities in BMI. The average glucose distribution is acceptable, as the normal average blood sugar level is less than 140, which may not be good; this feature will not be useful for determining the correlation between diabetes and strokes.
+
+![image](https://github.com/user-attachments/assets/d1489ffe-e86a-4656-a563-7aa4011e8085)
+
+![image](https://github.com/user-attachments/assets/8bc6a638-7235-4bc6-96e7-f6683957d9b8)
+
+- The average glucose level is high in elderly people.
+- BMI >40 has a low average glucose level.
+
+### The correlation matrix will show us if the data about BMI could be effective in decision making
+We can see that BMI doesn"t really influence the Stroke, however age is one of the most deciding points, followed by previous heart deseases and glucose level.
+With the further analysis we saw, that the high BMI (over 49.9) feature doesnt reallyinfluence the stroke feature: high BMI - 79 entries, but with stroke - only 1
+![image](https://github.com/user-attachments/assets/3d59232d-3d9c-4790-9d13-053aa27cecaa)
 
 
 # Technical details
