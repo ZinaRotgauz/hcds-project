@@ -178,6 +178,31 @@ We can see that BMI doesn"t really influence the Stroke, however age is one of t
 With the further analysis we saw, that the high BMI (over 49.9) feature doesnt reallyinfluence the stroke feature: high BMI - 79 entries, but with stroke - only 1
 ![image](https://github.com/user-attachments/assets/3d59232d-3d9c-4790-9d13-053aa27cecaa)
 
+# Interview Guide
+## Consent
+Before we begin, do I have your permission to use your answers from this interview for our project’s research and final presentation? Your identity will not be disclosed.
+
+## Introduction
+We’re designing a decision-support tool for doctors during routine checkups. It helps assess stroke risk using patient data (like age, glucose, BMI, and medical history). Rather than just saying ‘high’ or ‘low’ risk, it groups patients into profiles and explains why — so doctors can give personalized guidance.
+We’d like your input on how this might work in your practice, and whether it provides value.
+
+## Starting questions
+1. Do you use many digital tools or apps in your practice?
+2. Would you be open to using AI-based support tools in checkups?
+3. How do you currently assess stroke risk?
+4. 
+## Questions related with tasks
+
+## Open-ended questions
+1. What do you like about this interface or system?
+
+2. What part is most confusing or unhelpful?
+
+3. What information would you like to see that is currently missing?
+
+4. How would you integrate this tool into your routine?
+
+5. Would this change how you explain risk to patients?
 
 # Technical details
 For our research we are going to consider Logical Regression and Random Forest models and evaluate their accuracy for answering our research questions. This is because Logical Regression is highly interpretable and works well with binary targets, and it also explains which features contributes most to stroke risks. Random Forest also has high interpretability. It handles missing values well and ranks feature importance.
