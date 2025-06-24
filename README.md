@@ -179,10 +179,10 @@ With the further analysis we saw, that the high BMI (over 49.9) feature doesnt r
 ![image](https://github.com/user-attachments/assets/3d59232d-3d9c-4790-9d13-053aa27cecaa)
 
 # Interview Guide
-## Consent
+## Consent Question
 Before we begin, do I have your permission to use your answers from this interview for our project’s research and final presentation? Your identity will not be disclosed.
 
-## Introduction
+## Project Introduction
 We’re designing a decision-support tool for doctors during routine checkups. It helps assess stroke risk using patient data (like age, glucose, BMI, and medical history). Rather than just saying ‘high’ or ‘low’ risk, it groups patients into profiles and explains why — so doctors can give personalized guidance.
 We’d like your input on how this might work in your practice, and whether it provides value.
 
@@ -190,7 +190,7 @@ We’d like your input on how this might work in your practice, and whether it p
 1. Do you use many digital tools or apps in your practice?
 2. Would you be open to using AI-based support tools in checkups?
 3. How do you currently assess stroke risk?
-4. 
+
 ## Questions related with tasks
 
 ## Open-ended questions
