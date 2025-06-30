@@ -192,19 +192,19 @@ We’d like your input on how this might work in your practice, and whether it p
 3. How do you currently assess stroke risk?
 
 ## Questions related with tasks
-Task1: Imagine you’re seeing a new patient during a routine checkup. Could you walk me through how you’d use this tool to input their information?
+Task1: Imagine you’re seeing a new patient during a routine checkup. Could you walk me through how you’d use this tool to input their information?<br>
 Question: Is anything unclear while entering the data? Would you expect anything to happen at this stage?
 
-Task2: You’ve now entered the data and pressed ‘Predict Stroke Risk’. What do you expect to see next? How would you use this information in your conversation with the patient?
+Task2: You’ve now entered the data and pressed ‘Predict Stroke Risk’. What do you expect to see next? How would you use this information in your conversation with the patient?<br>
 Question: What would you tell the patient based on the output? Would you want more context around the prediction — such as confidence or comparison to averages?
 
-Task3:Imagine the system now groups the patient into a certain risk profile, and you can click on that profile to see common features of people in the same group. What do you expect to see?
+Task3:Imagine the system now groups the patient into a certain risk profile, and you can click on that profile to see common features of people in the same group. What do you expect to see?<br>
 Questions: Would this kind of profile grouping help your decision-making? How would you explain it to a patient?
 
-Task4: Imagine you want to show your patient how their stroke risk changes if they reduce their glucose level or quit smoking. How would you do this using the tool?
+Task4: Imagine you want to show your patient how their stroke risk changes if they reduce their glucose level or quit smoking. How would you do this using the tool?<br>
 Questions: Would this motivate behavior change for the patient? Would a side-by-side comparison help?
 
-Task5: You’ve completed the checkup and want to record the result or share it with another specialist. What would you do?
+Task5: You’ve completed the checkup and want to record the result or share it with another specialist. What would you do?<br>
 Question: Would you want to add notes or see documentation of how the result was calculated? Would you prefer export, print, or integration with an EHR system?
 
 ## Open-ended questions
