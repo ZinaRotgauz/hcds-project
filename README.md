@@ -191,7 +191,7 @@ We’d like your input on how this might work in your practice, and whether it p
 2. Would you be open to using AI-based support tools in checkups?
 3. How do you currently assess stroke risk?
 
-## Questions related with tasks
+## Task-related questions
 Task1: Imagine you’re seeing a new patient during a routine checkup. Could you walk me through how you’d use this tool to input their information?<br>
 Question: Is anything unclear while entering the data? Would you expect anything to happen at this stage?
 
