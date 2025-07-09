@@ -290,13 +290,13 @@ For our research we are going to consider Logical Regression and Random Forest m
 
 ## 3. **Planned Changes Based on Feedback**
 
-- ✅ Add “diverse” to gender options and relabel “Ever Married?”  
-- ✅ Refactor input UI to 2-column layout to reduce screen space  
-- ✅ Show example of high-risk prediction, not just low-risk  
-- ✅ Add clinical recommendation note if risk is high  
-- ✅ Plot BMI and glucose on separate axes with brief explanation  
-- ✅ Update SHAP plot: remove grey bars, keep arrows, highlight top variables  
-- ✅ Add visual legend for SHAP plot color meaning  
-- ✅ Improve variable name clarity and contrast in feature lists  
-- ✅ Add comparison to similar patients in explanation section  
+- Add “diverse” to gender options and relabel “Ever Married?”  
+- Refactor input UI to 2-column layout to reduce screen space  
+- Show example of high-risk prediction, not just low-risk  
+- Add clinical recommendation note if risk is high  
+- Plot BMI and glucose on separate axes with brief explanation  
+- Update SHAP plot: remove grey bars, keep arrows, highlight top variables  
+- Add visual legend for SHAP plot color meaning  
+- Improve variable name clarity and contrast in feature lists  
+- Add comparison to similar patients in explanation section  
 
