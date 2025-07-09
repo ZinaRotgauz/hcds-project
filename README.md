@@ -222,3 +222,81 @@ Question: Would you want to add notes or see documentation of how the result was
 
 # Technical details
 For our research we are going to consider Logical Regression and Random Forest models and evaluate their accuracy for answering our research questions. This is because Logical Regression is highly interpretable and works well with binary targets, and it also explains which features contributes most to stroke risks. Random Forest also has high interpretability. It handles missing values well and ranks feature importance.
+
+# User Study Feedback
+
+## 1. **Summary of Feedback from User Study**
+
+**Interview 1:**
+- **Part 1 – Input Form:**
+  - Add “diverse” option to gender field.
+  - “Ever Married?” label unclear—needs better wording.
+  - Work type categories are ambiguous or confusing.
+
+- **Part 2 – Stroke Risk Prediction:**
+  - Only low-risk result shown—users want to see what a high-risk case looks like.
+  - Desire for follow-up recommendations from the AI in case of high risk (e.g., medication, further checks).
+  - BMI and glucose are hard to interpret on the same scale—users suggest using different scales.
+  - Add reasoning for why BMI and glucose are emphasized.
+
+- **Part 3 – AI Explanation (SHAP plot):**
+  - Combine textual and graphical explanation for clarity.
+  - Variable names are not intuitive for non-technical users.
+  - Remove grey values (less useful) on SHAP bar chart.
+  - Keep arrows and make top variables more visually prominent.
+  - Add explanation for color meaning (blue/red) and value interpretation.
+
+**Interview 2:**
+- **Part 1 – Input UI:**
+  - Input fields take too much vertical space; split into two columns to fit one screen.
+
+- **Part 2 – Risk Result Display:**
+  - Positive visual feedback: colors of risk levels are clear and intuitive.
+  - Threshold line in the risk plot is not prominent.
+  - Users want more context on why certain features contribute the most.
+  - Suggestion: show similar patient comparisons to explain risk better.
+
+- **Part 3 – AI Explanation:**
+  - Variable names lack contrast—need clearer visual emphasis.
+  - “Top contributing features” list is hard to scan—should be paired with mini graphs and a clearer layout with a right-aligned variable name column.
+
+---
+
+## 2. **Design Implications Discussed**
+
+- **Inclusivity & Clarity in Inputs:**
+  - Rethink form labels (e.g., “Ever Married?”) for clarity.
+  - Update gender options to reflect diversity.
+  - Replace ambiguous terms in dropdowns with user-friendly labels.
+
+- **Interpretability & Actionability of Results:**
+  - Visualize both low and high-risk cases for contrast.
+  - Add recommendations or clinical follow-up suggestions when risk is high.
+  - Separate BMI and glucose in visual comparisons to avoid confusion.
+  - Explain why certain features matter using comparisons or short notes.
+
+- **Improved SHAP Explanation:**
+  - Merge text + visual explanation.
+  - Clarify the color coding (red = increase risk, blue = decrease).
+  - Remove non-informative elements like grey bars.
+  - Use layout and color to emphasize the most important variables.
+
+- **Better Layout & Usability:**
+  - Redesign form layout to reduce scrolling (two-column format).
+  - Ensure each part fits within one screen for smoother navigation.
+  - Use cleaner, more structured layout in feature explanations.
+
+---
+
+## 3. **Planned Changes Based on Feedback**
+
+- ✅ Add “diverse” to gender options and relabel “Ever Married?”  
+- ✅ Refactor input UI to 2-column layout to reduce screen space  
+- ✅ Show example of high-risk prediction, not just low-risk  
+- ✅ Add clinical recommendation note if risk is high  
+- ✅ Plot BMI and glucose on separate axes with brief explanation  
+- ✅ Update SHAP plot: remove grey bars, keep arrows, highlight top variables  
+- ✅ Add visual legend for SHAP plot color meaning  
+- ✅ Improve variable name clarity and contrast in feature lists  
+- ✅ Add comparison to similar patients in explanation section  
+
