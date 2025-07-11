@@ -43,8 +43,6 @@ def load_background():
 model = load_model()
 X_background = load_background()
 
-st.title("🔎 Enter Patient Information")
-
 def classify_risk(prob):
     if prob >= 0.7:
         return "HIGH", "red", "⚠️ Refer to a specialist immediately."
@@ -52,27 +50,34 @@ def classify_risk(prob):
         return "MEDIUM", "orange", "📋 Recommend lifestyle changes and regular checkups."
     else:
         return "LOW", "green", "✅ No urgent action. Maintain healthy habits."
+    
+st.title("🔎 Enter Patient Information")
 
-age = st.number_input("Age", min_value=1, max_value=100, value=30)
-hypertension = st.selectbox("Hypertension", ("Yes", "No"))
-heart_disease = st.selectbox("Heart Disease", ("Yes", "No"))
-avg_glucose_level = st.number_input("Average Glucose Level", min_value=0.0, value=80.0)
-bmi = st.number_input("BMI", min_value=0.0, value=20.0)
-gender = st.selectbox("Gender", ("Male", "Female"))
-smoking_status = st.selectbox("Smoking Status", ("formerly smoked", "never smoked", "smokes"))
-ever_married = st.selectbox("Ever Married", ("Yes", "No"))
+col_right,col_left = st.columns(2)
 
-work_type_display = {
-    "Private Company": "Private",
-    "Self-employed / Freelancer": "Self-employed",
-    "Government Job": "Govt_job",
-    "Never Worked": "Never_worked",
-    "Underage / Child": "children"
-}
-work_type_label = st.selectbox("Work Type", list(work_type_display.keys()))
-work_type = work_type_display[work_type_label]
+with col_left:
+    age = st.number_input("Age", min_value=1, max_value=100, value=30)
+    hypertension = st.selectbox("Hypertension", ("Yes", "No"))
+    heart_disease = st.selectbox("Heart Disease", ("Yes", "No"))
+    avg_glucose_level = st.number_input("Average Glucose Level", min_value=0.0, value=80.0)
+    bmi = st.number_input("BMI", min_value=0.0, value=20.0)
 
-residence_type = st.selectbox("Residence Type", ("Urban", "Rural"))
+
+with col_right:
+    gender = st.selectbox("Gender", ("Male", "Female"))
+    smoking_status = st.selectbox("Smoking Status", ("formerly smoked", "never smoked", "smokes"))
+    ever_married = st.selectbox("Ever Married", ("Yes", "No"))
+    work_type_display = {
+        "Private Company": "Private",
+        "Self-employed / Freelancer": "Self-employed",
+        "Government Job": "Govt_job",
+        "Never Worked": "Never_worked",
+        "Underage / Child": "children"
+    }
+    work_type_label = st.selectbox("Work Type", list(work_type_display.keys()))
+    work_type = work_type_display[work_type_label]
+
+    residence_type = st.selectbox("Residence Type", ("Urban", "Rural"))
 
 input_data = pd.DataFrame([{
     'age': age,
