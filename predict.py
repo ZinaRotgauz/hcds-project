@@ -29,6 +29,16 @@ FEATURE_NAME_MAP = {
     "cat__work_type_children": "Work Type: Child/Student",
 }
 
+recommendation_map = {
+    "bmi": "Encourage weight management, dietary counseling, and regular exercise.",
+    "avg_glucose_level": "Monitor blood sugar levels, reduce refined sugar intake, and consider diabetes screening.",
+    "hypertension": "Check blood pressure regularly, reduce salt intake, and consider antihypertensive therapy.",
+    "heart_disease": "Ensure cardiac follow-up, monitor symptoms, and manage cholesterol.",
+    "smoking_status": "Encourage smoking cessation and offer support programs."
+}
+
+
+
 
 @st.cache_resource
 def load_model():
@@ -96,17 +106,34 @@ if st.button("Predict Stroke"):
     prediction = model.predict(input_data)[0]
     probability = model.predict_proba(input_data)[0][1]
     risk_level, risk_color, recommendation = classify_risk(probability)
+    shap_explainer = shap.Explainer(model.named_steps['classifier'], model.named_steps['preprocessor'].transform(X_background))
+    input_transformed = model.named_steps['preprocessor'].transform(input_data)
+    shap_values = shap_explainer(input_transformed)
+    feature_names = model.named_steps['preprocessor'].get_feature_names_out()
+
+
+        # Match SHAP features  to raw names
+    shap_importance = {
+        feature_names[idx]: shap_values[0].values[idx]
+        for idx in range(len(feature_names))
+    }
+
+    # Filter top 5 positive contributors that are modifiable
+    modifiable_features = [k for k in shap_importance if any(key in k for key in recommendation_map)]
+    top_positive = sorted(
+        [(k, v) for k, v in shap_importance.items() if v > 0 and any(feat in k for feat in recommendation_map)],
+        key=lambda x: abs(x[1]), reverse=True
+    )[:3]
 
     st.subheader("🧠 Stroke Risk Evaluation")
     with st.container():
         st.markdown(f"**Risk Level:** <span style='color:{risk_color}; font-weight:bold'>{risk_level}</span>", unsafe_allow_html=True)
         st.markdown(f"**Probability:** {probability:.2%}")
-        st.markdown(f"**Recommendation:** {recommendation}")
-
-    shap_explainer = shap.Explainer(model.named_steps['classifier'], model.named_steps['preprocessor'].transform(X_background))
-    input_transformed = model.named_steps['preprocessor'].transform(input_data)
-    shap_values = shap_explainer(input_transformed)
-    feature_names = model.named_steps['preprocessor'].get_feature_names_out()
+        # st.markdown(f"**Recommendation:** {recommendation}")
+        st.subheader("🧾 Personalized Stroke Prevention Tips")
+        for fname, value in top_positive:
+            key = next(feat for feat in recommendation_map if feat in fname)
+            st.markdown(f"• **{key.replace('_', ' ').title()}**: {recommendation_map[key]}")
 
 
     st.subheader("📋 Patient Profile")
